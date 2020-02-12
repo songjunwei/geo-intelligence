@@ -11,13 +11,13 @@
         text-color="#fff"
         active-text-color="#ffd04b"
       >
-        <router-link to="/index/home" :key="1">
+        <router-link to="/home" :key="1">
           <el-menu-item index="1">首页</el-menu-item>
         </router-link>
-        <router-link to="/index/map" :key="2">
+        <router-link to="/map" :key="2">
           <el-menu-item index="2">地图</el-menu-item>
         </router-link>
-         <router-link to="/index/about" :key="3">
+         <router-link to="/about" :key="3">
           <el-menu-item index="3">关于</el-menu-item>
         </router-link>
       </el-menu>
