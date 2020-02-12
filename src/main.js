@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-//import '@/mock'; // mock数据
+import '@/mock'; // mock数据
 
 import ElementUI from 'element-ui'
 Vue.use(ElementUI);

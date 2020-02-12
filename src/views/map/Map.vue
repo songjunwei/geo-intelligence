@@ -13,6 +13,8 @@
 </script>
 
 <style lang="less">
-
+  #map-container {
+    height: 100%;
+  }
 
 </style>

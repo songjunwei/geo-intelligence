@@ -1,30 +1,22 @@
 <template>
   <div>
-    <!-- <head-nav></head-nav> -->
-    <div class="left-menu">
+    <div class="head-nav">
       <el-menu
-        :default-active="activeIndex2"
-        class="el-menu-demo"
-        mode="vertical"
+        :default-active="activeIndex"
+        mode="horizontal"
         @select="handleSelect"
         background-color="#545c64"
         text-color="#fff"
         active-text-color="#ffd04b"
       >
-        <router-link to="/home" :key="1">
-          <el-menu-item index="1">首页</el-menu-item>
-        </router-link>
-        <router-link to="/map" :key="2">
-          <el-menu-item index="2">地图</el-menu-item>
-        </router-link>
-         <router-link to="/about" :key="3">
-          <el-menu-item index="3">关于</el-menu-item>
-        </router-link>
+        <el-menu-item index="/home">首页</el-menu-item>
+        <el-menu-item index="/map">地图</el-menu-item>
+        <el-menu-item index="/about">关于</el-menu-item>
       </el-menu>
     </div>
-
-    <router-view class="right-content"></router-view
-    ><!--页面渲染入口-->
+    <div class="main-content">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -35,8 +27,7 @@ export default {
   name: "layout",
   data() {
     return {
-      activeIndex: "1",
-      activeIndex2: "1"
+      activeIndex: "/home"
     };
   },
   // components: {
@@ -44,28 +35,24 @@ export default {
   // },
   methods: {
     handleSelect(key, keyPath) {
-      console.log(key, keyPath);
+      this.$router.push(key);
     }
   }
 };
 </script>
 
 <style lang="less" scoped>
-.el-menu-demo {
-  height: 100%;
-}
-.left-menu {
+.head-nav {
   position: absolute;
+  left: 5px;
+  right: 5px;
   top: 0px;
-  left: 0px;
-  bottom: 0px;
-  width: 180px;
 }
-.right-content {
+.main-content {
   position: absolute;
-  top: 0px;
+  top: 65px;
   bottom: 0px;
-  left: 180px;
-  right: 0px;
+  right: 5px;
+  left: 5px;
 }
 </style>
