@@ -28,7 +28,7 @@ export default {
   async mounted() {
 
     const res = await getTitles()
-    this.titles = res.list
+    this.titles = res.data.list
   }
 }
 </script>

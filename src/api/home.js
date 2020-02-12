@@ -7,3 +7,12 @@ export  function getTitles() {
     method: 'get'
   })
 } 
+
+export function login(params) {
+  
+  return service({
+    url: '/api/login',
+    method: 'get',
+    data: params
+  })
+}
