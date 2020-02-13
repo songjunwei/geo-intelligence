@@ -6,7 +6,6 @@
   export default {
     name: 'Map',
     mounted() {
-
       var viewer = new Cesium.Viewer('map-container');
     }
   }

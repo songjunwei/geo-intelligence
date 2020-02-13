@@ -4,6 +4,7 @@ import NProgress from 'nprogress'
 import Home from '../views/Home.vue'
 import Login from '../views/permission/Login.vue'
 import Layout from '@/components/layout'
+import Map from '../views/map/Map.vue'
 
 Vue.use(VueRouter)
 
@@ -32,7 +33,7 @@ const routes = [
       {
         path: 'map',
         name: 'Map',
-        component: () => import('../views/map/Map.vue')
+        component: Map
       }
     ]
 
@@ -42,7 +43,6 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
   routes
 })
 

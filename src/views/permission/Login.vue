@@ -82,8 +82,8 @@
 					if (valid) {
 						let userinfo = this.loginForm;
 						login(userinfo).then(res => {
-							let userList = res.data.userList;
-							localStorage.setItem("Token",userList.token)
+							let data = res.data;
+							localStorage.setItem("Token",data.token)
 							this.$router.push({ path: '/' })
 					
 						})

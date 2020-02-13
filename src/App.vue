@@ -4,6 +4,13 @@
   </div>
 </template>
 
+<script>
+
+export default {
+  name: 'App'
+}
+</script>
+
 <style lang="less">
  
  @import './style/variables.less'; // 引入全局样式
@@ -29,4 +36,5 @@
     }
   }
 }
+
 </style>

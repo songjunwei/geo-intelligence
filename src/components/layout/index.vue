@@ -21,7 +21,6 @@
 </template>
 
 <script>
-// import HeadNav from "./headNav.vue";
 
 export default {
   name: "layout",
@@ -30,9 +29,6 @@ export default {
       activeIndex: "/home"
     };
   },
-  // components: {
-  //   HeadNav
-  // },
   methods: {
     handleSelect(key, keyPath) {
       this.$router.push(key);
