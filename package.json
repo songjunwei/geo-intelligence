@@ -10,7 +10,6 @@
   "dependencies": {
     "ant-design-vue": "^1.4.10",
     "axios": "^0.19.2",
-    "cesium": "^1.61.0",
     "core-js": "^3.6.4",
     "echarts": "^4.6.0",
     "element-ui": "^2.13.0",

@@ -54,8 +54,8 @@ router.beforeEach((to, from, next) => {
   NProgress.start()
   // 点击登录时，有token如果是登录页直接进入首页
   if (localStorage.getItem('Token')) {
-    if(to.path === '/login') {
-      next({ path: '/' })  
+    if(to.path === '/login' || to.path === '/') {
+      next({ path: '/home' })  
     } else {
       next()
     }
