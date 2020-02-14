@@ -8,7 +8,7 @@
 
 <script>
 
-  import {getTitles} from '@/api/home'
+  import {getTitles} from '@/api'
 
 export default {
   name: 'HelloWorld',
@@ -28,7 +28,8 @@ export default {
   async mounted() {
 
     const res = await getTitles()
-    this.titles = res.data.list
+    debugger
+    this.titles = res.data
   }
 }
 </script>

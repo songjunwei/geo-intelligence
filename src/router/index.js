@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import NProgress from 'nprogress'
-import Home from '../views/Home.vue'
-import Login from '../views/permission/Login.vue'
+import Home from '../views/home.vue'
+import Login from '../views/permission/login.vue'
 import Layout from '@/components/layout'
-import Map from '../views/map/Map.vue'
+import Map from '../views/map'
 
 Vue.use(VueRouter)
 
@@ -28,7 +28,7 @@ const routes = [
       {
         path: 'about',
         name: 'About',
-        component: () => import('../views/About.vue')
+        component: () => import('../views/about.vue')
       },
       {
         path: 'map',

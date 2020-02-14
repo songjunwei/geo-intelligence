@@ -1,6 +1,23 @@
-import Mock from 'mockjs'
 
-import userApi from './user'
+const mock = [
+  // 登录模拟
+  {
+    type: 'get',
+    url: '/api/login',
+    data: {
+      token:'admin',
+      name: '管理员'
+    }
+  },
+  // 标题获取
+  {
+    type: 'get',
+    url: '/api/titles',
+    data: [
+      '标题1',
+      '标题2'
+    ]
+  }
+]
 
-Mock.mock(/\/api\/login/, 'get', userApi.login)
-Mock.mock(/\/api\/titles/, 'get', userApi.getTitles)
+module.exports = mock

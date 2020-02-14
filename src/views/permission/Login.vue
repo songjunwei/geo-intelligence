@@ -45,7 +45,7 @@
 
 <script>
 	import logoImg from "@/assets/img/logo.png";
-	import { login } from "@/api/home";
+	import { login } from "@/api";
 
 	export default {
 	    data(){
