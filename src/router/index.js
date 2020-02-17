@@ -12,7 +12,10 @@ const routes = [
   {
     path: '/login',
     name: 'Login',
-    component: Login
+    component: Login,
+    meta:{ // 可以存储meta信息
+			title:'登录页'
+		},
 
   },
   {
@@ -43,6 +46,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
+  //base: '/permission/', // 添加跟目录,对应服务器部署子目录
   routes
 })
 

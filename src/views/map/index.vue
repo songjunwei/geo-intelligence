@@ -14,6 +14,8 @@
 <style lang="less">
   #map-container {
     height: 100%;
+    width: 80%;
+    padding: 0px 5px;
   }
 
 </style>

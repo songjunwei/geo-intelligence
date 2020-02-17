@@ -11,6 +11,7 @@ module.exports = {
   // },
   lintOnSave: process.env.NODE_ENV !== 'production', // 保存是否进行eslint检查
   devServer: {
+    //port: 8808,
     before(app) {
       mock.map(item => {
         app[item.type](item.url, (req, res) => {

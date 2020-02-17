@@ -47,7 +47,7 @@ export default {
 .main-content {
   position: absolute;
   top: 65px;
-  bottom: 0px;
+  bottom: 1px;
   right: 5px;
   left: 5px;
 }
