@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+// model test
 import user from './modules/user'
 import map from './modules/map'
 
